@@ -1,0 +1,323 @@
+/* 
+    IBM In-house {Web Coder} course Assignment Snippet.
+    CSS styling slave file.
+    For internal IBM learning usage.
+*/
+
+
+/*  ----- HTML Body Styles -----  */
+body {
+  /* Position: relative; */
+  margin: 0;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  
+  /* Padding for top navbar fixed  */
+  padding-top: 75px; 
+}
+html {
+  font-size: 14px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+  nav > a > img {
+    height: 22px;
+  }
+
+  /* Responsive typography */
+  /* 
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 16px;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 20px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 28px;
+    } 
+  */
+
+  /* Jumbotron */
+  .jumbotron{
+    background-image: url("../image/my princess.jpg");
+    min-height: 580px;
+    /* display: block; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: top;
+    color: white;
+  }
+   
+  /* LAYOUT - Responsive breakpoints */
+  /* // Extra small devices (portrait phones, less than 576px) */
+  @media (max-width: 575px) {  
+
+  }
+
+  /* // Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767px) {  
+
+  }
+
+  /* // Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991px) {  
+
+  }
+
+  /* // Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199px) {  
+      
+  }
+
+  /* // Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+
+  }
+}
+/* Contact Information */
+.my-body{
+  background-color: pink;
+}
+.my-container{
+    border: 1px solid #aaa; 
+    background-color: white;
+    max-width: 400px;
+    margin: 0px auto 10px auto;
+    padding: 2.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+    font-family: "Lato";
+}
+.my-container h1{
+	text-align: center;
+}
+.my-container ul{
+	max-width: 200px;
+	margin: auto;
+}
+.my-hr{
+	max-width: 300px;
+	border: 5px solid fuchsia;
+}
+.my-face{
+	display: block;
+	width: 150px;
+	height: 150px;
+	margin: auto; 
+	border-radius: 50%;
+	border: 1px solid #aaa;
+	margin-top: -100px;
+}
+.author {
+  font-family: 'Tahoma';
+  font-size: 20px;
+  text-align: center;
+}
+.my-link{
+	font-weight: 700;
+	text-decoration: none;
+  color: black;
+}
+.my-link:hover, .my-link:active{
+	color: white;
+	background-color:pink;
+	padding-left: 1rem;
+}
+
+/* ABOUT */
+.container-fluid{
+  font-size: 14px;
+  font-family: Arial Black;
+  background-color: rgba(255, 192, 203, 0.8);
+  font-style: normal;
+  }
+
+/* footer */
+.design{
+  font-family: Arial;
+  color: darkmagenta;
+  text-align: center;
+}
+
+   /* Adding Card-header: subcrible ot blue */
+.card-header{
+    background-color:blue !important;
+    text-align:center;
+}
+  
+  
+  #dialogoverlay {
+    display: none;
+    opacity: 0.8;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #FFF;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  #dialogbox {
+    display: none;
+    position: fixed;
+    background: #999;
+    border-radius: 7px;
+    width: 550px;
+    z-index: 10;
+  }
+  
+  #dialogbox>div {
+    background: #ccc;
+    margin: 8px;
+  }
+  
+  #dialogbox>div>#dialogboxhead {
+    background: #667;
+    font-size: 19px;
+    padding: 10px;
+    color: #FFF;
+  }
+  
+  #dialogbox>div>#dialogboxbody {
+    background: #ccc;
+    padding: 20px;
+    color: rgb(67, 31, 199);
+  } 
+  
+  #dialogbox>div>#dialogboxfoot {
+    background: #667;
+    padding: 10px;
+    text-align: right;
+  }
+
+  /* PHOTOS */
+  .myThumbnail {
+    -moz-box-shadow: 0 0 0 1px #fff;
+    -webkit-box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 1px #fff;
+    overflow: hidden;
+    position: relative;
+  }
+  .myThumbnail img {
+    width: 100%;
+    height: 100%;
+  }
+  .myThumbnail .overlay {
+    background: rgba(0, 174, 218, 0.9);
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    -moz-transition: opacity, 0.3s;
+    -o-transition: opacity, 0.3s;
+    -webkit-transition: opacity, 0.3s;
+    transition: opacity, 0.3s;
+  }
+  .myThumbnail .overlay-caption {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 100%;
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .myThumbnail h5, .myThumbnail p, .myThumbnail img {
+    -moz-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    -webkit-transition: all, 0.5s;
+    transition: all, 0.5s;
+  }
+  .myThumbnail h5, .myThumbnail p {
+    color: #fff;
+    margin: 0;
+    opacity: 0;
+  }
+  .myThumbnail span {
+    font-size: 45px;
+  }
+  .myThumbnail h5 {
+    margin-bottom: 5px;
+    -moz-transform: translate3d(0, -200%, 0);
+    -ms-transform: translate3d(0, -200%, 0);
+    -webkit-transform: translate3d(0, -200%, 0);
+    transform: translate3d(0, -200%, 0);
+  }
+  .myThumbnail p {
+    -moz-transform: translate3d(0, 200%, 0);
+    -ms-transform: translate3d(0, 200%, 0);
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+  }
+  .myThumbnail-box:hover img {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .myThumbnail-box:hover .overlay {
+    opacity: 1;
+  }
+  .myThumbnail-box:hover .overlay h5, .myThumbnail-box:hover .overlay p {
+    opacity: 1;
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* FLIPPER */
+  /* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+/* Size of the box for photos   */
+.flip-container, .front, .back {
+	width: 320px;
+	height: 180px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
