@@ -321,3 +321,51 @@ html {
 .back {
 	transform: rotateY(180deg);
 }
+
+/* Atasha's Photo html */
+.Atashatitle{
+    color:fuchsia;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* border: 20px; */
+    padding: 20px;
+    /* background-image: url("maple.jpg"); */
+    /* background-repeat: repeat; */
+    /* background-size: 50%; */
+    /* background-position: center; */
+  }
+
+  /* Althea's Photo html */
+  .Altheatitle{
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: left;
+    padding: 20px;
+ }
+ 
+}
+  
+.parallax {
+    /* The image used */
+    /* background-image: url("AU13.jpg"); */
+
+    /* Set a specific height */
+    min-height: 500px; 
+    margin-top: 10px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Space between the photos */
+#Spacing {
+  margin-top: 75px;
+}
+
